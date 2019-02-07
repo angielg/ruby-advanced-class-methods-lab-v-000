@@ -51,7 +51,7 @@ class Song
   def self.new_from_filename(filename)
     song = self.new
     song_info = filename.split(" - ")
-    @artist_name = info[0]
+    @artist_name = song_info[0]
     @name = info[1].split(".mp3")
     song.artist_name = @artist_name
     song.name = @name
