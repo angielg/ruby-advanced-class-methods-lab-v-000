@@ -52,7 +52,7 @@ class Song
     song = self.new
     song_info = filename.split(" - ")
     @artist_name = song_info[0]
-    @name = info[1].split(".mp3")
+    @name = song_info[1].split(".mp3")
     song.artist_name = @artist_name
     song.name = @name
     song
